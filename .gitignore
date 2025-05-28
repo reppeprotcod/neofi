@@ -1,0 +1,8 @@
+# scss
+**/*.map
+
+# editor
+.vscode/**
+
+# secrets
+**/*.env*

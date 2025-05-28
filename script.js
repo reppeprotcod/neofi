@@ -1,10 +1,8 @@
 const burger = document.querySelector('.header__burger');
-const nav = document.querySelector('.header__nav');
-const auth = document.querySelector('.header__auth');
+const panel = document.querySelector('.header__panel');
 
 burger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    auth.classList.toggle('open');
+    panel.classList.toggle('open');
 });
 
 document.querySelectorAll('.faq__question').forEach(button => {
