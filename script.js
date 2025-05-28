@@ -32,6 +32,7 @@ const slider = document.querySelector('.customers__slider');
 
 burger.addEventListener('click', () => {
     panel.classList.toggle('open');
+    burger.classList.toggle('open');
 });
 
 document.querySelectorAll('.faq__question').forEach(button => {

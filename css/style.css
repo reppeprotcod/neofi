@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   border: none;
   box-shadow: none;
@@ -177,6 +181,26 @@ h3 {
   border: none;
   color: #E5E5E5;
   font-size: 2rem;
+}
+.header .container .burger__icon {
+  display: block;
+  box-sizing: border-box;
+  background-color: #E5E5E5;
+  width: 24px;
+  height: 3px;
+  margin: 5px 0;
+  transform: initial;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.header .container .header__burger.open .burger_1 {
+  transform: translateY(8px) rotate(45deg);
+}
+.header .container .header__burger.open .burger_2 {
+  transform: rotate(-45deg);
+}
+.header .container .header__burger.open .burger_3 {
+  opacity: 0;
+  transform: translateY(-8px) rotate(45deg);
 }
 
 .hero .container {
@@ -365,9 +389,13 @@ h3 {
   scrollbar-width: none;
 }
 .customers .customers__slide {
+  display: flex;
+  flex-direction: column;
   padding: 32px;
-  height: 204px;
+  height: 100%;
+  min-height: 204px;
   min-width: 343px;
+  justify-content: space-between;
 }
 .customers .customer {
   display: flex;
@@ -400,8 +428,9 @@ h3 {
   width: 100%;
 }
 .faq__content .faq__item.active .faq__answer {
+  height: -moz-fit-content;
+  height: fit-content;
   max-height: 200px;
-  padding: 16px 20px;
 }
 .faq__content .faq__question {
   display: flex;
@@ -415,7 +444,7 @@ h3 {
   border: 1px solid #2E2E2E;
 }
 .faq__content .faq__question .plus {
-  transition: transform 0.6s ease;
+  transition: transform 0.3s ease;
 }
 .faq__content .faq__item.active .plus {
   transform: rotate(45deg);
@@ -423,10 +452,11 @@ h3 {
 .faq__content .faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease, padding 1s ease;
+  transition: max-height 0.3s linear;
 }
 .faq__content .faq__answer .text1 {
   color: #999999;
+  margin: 16px 20px;
 }
 
 .cta {
@@ -537,8 +567,8 @@ h3 {
   }
   .header .container .header__panel {
     display: flex;
-    max-height: -moz-max-content;
-    max-height: max-content;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
     transition: none;
     width: 66%;
     margin: 0;
@@ -597,7 +627,7 @@ h3 {
     transition: transform 0.7s ease;
   }
   .feature__content .batch__border:hover {
-    transform: translate(20px, -6px);
+    transform: translate(20px, 0px);
   }
   .feature__content .feature__img {
     width: 506px;

@@ -23,16 +23,20 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <img src="img/Logo.svg" alt="logo" class="header__logo">
-                <button class="header__burger">&#9776;</button>
+                <a href="/"><img src="img/Logo.svg" alt="logo" class="header__logo"></a>
+                <button class="header__burger">
+                    <div class="burger__icon burger_1"></div>
+                    <div class="burger__icon burger_2"></div>
+                    <div class="burger__icon burger_3"></div>
+                </button>
             </div>
             <div class="header__panel">
                 <nav class="header__nav">
                     <ul class="nav">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Testimonial</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                        <li class="nav__item"><a href="#testimonial" class="nav__link">Testimonial</a></li>
+                        <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
                     </ul>
                 </nav>
                 <div class="header__auth">
@@ -82,7 +86,7 @@
         </section>
     </main>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <div class="section__content">
                 <p class="text2 section__name">Features</p>
@@ -116,7 +120,7 @@
         </div>
     </section>
 
-    <section class="statistics">
+    <section class="statistics" id="statistics">
         <div class="container">
             <div class="section__content">
                 <p class="text2 section__name">Statistics</p>
@@ -141,7 +145,7 @@
         </div>
     </section>
 
-    <section class="feature">
+    <section class="feature" id="feature">
         <div class="container">
             <div class="section__content">
                 <p class="text2 section__name">Feature</p>
@@ -191,7 +195,7 @@
         </div>
     </section>
 
-    <section class="customers">
+    <section class="customers" id="testimonial">
         <div class="container">
             <div class="section__content">
                 <p class="text2 section__name">Testimonial</p>
@@ -321,7 +325,7 @@
         </div>
     </section>
 
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container">
             <div class="section__content">
                 <p class="text2 section__name">FAQ</p>
@@ -332,11 +336,11 @@
             <div class="faq__content">
                 <div class="faq__item">
                     <button class="faq__question">
-                        <span class="text1">What is NexoFi, and how does it work?</span>
+                        <span class="text1">What is NeoFi, and how does it work?</span>
                         <img src="img/Plus.svg" alt="plus" class="plus">
                     </button>
                     <div class="faq__answer">
-                        <p class="text1">What is NexoFi, and how does it work?</p>
+                        <p class="text1">What is NeoFi, and how does it work?</p>
                     </div>
                 </div>
                 <div class="faq__item">
@@ -388,7 +392,7 @@
         </div>
     </section>
 
-    <section class="cta">
+    <section class="cta" id="revolutionary">
         <div class="container">
             <div class="section__content">
                 <p class="text2 section__name">Revolutionary</p>
@@ -403,12 +407,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <img src="img/Logo.svg" alt="logo" class="footer__item">
+                <a href="/"><img src="img/Logo.svg" alt="logo" class="footer__item"></a>
                 <div class="footer__item">
                     <p class="subtitle">Quick links</p>
                     <ul class="links">
-                        <li class="links__item"><a href="#" class="text2 links__link">Home</a></li>
-                        <li class="links__item"><a href="#" class="text2 links__link">Features</a></li>
+                        <li class="links__item"><a href="/" class="text2 links__link">Home</a></li>
+                        <li class="links__item"><a href="#features" class="text2 links__link">Features</a></li>
                         <li class="links__item"><a href="#" class="text2 links__link">Community</a></li>
                         <li class="links__item"><a href="#" class="text2 links__link">Support</a></li>
                     </ul>
@@ -417,7 +421,7 @@
                     <p class="subtitle">Help</p>
                     <ul class="links">
                         <li class="links__item"><a href="#" class="text2 links__link">Help Centre</a></li>
-                        <li class="links__item"><a href="#" class="text2 links__link">FAQ</a></li>
+                        <li class="links__item"><a href="#faq" class="text2 links__link">FAQ</a></li>
                         <li class="links__item"><a href="#" class="text2 links__link">Forum</a></li>
                     </ul>
                 </div>
