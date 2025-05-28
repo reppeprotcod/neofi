@@ -625,15 +625,4 @@ h3 {
   .footer .container .footer__content .input {
     max-width: 385px;
   }
-  .customers__slider {
-    animation: scroll 20s linear infinite;
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-25%);
-    }
-  }
 }/*# sourceMappingURL=style.css.map */
