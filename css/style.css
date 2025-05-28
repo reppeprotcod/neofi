@@ -125,14 +125,13 @@ h3 {
 }
 .header .container .header__panel {
   margin: 0 auto;
-  max-height: 0;
-  height: -moz-fit-content;
-  height: fit-content;
-  transition: max-height 0.5s ease;
+  height: 0;
+  width: 100%;
+  transition: height 0.5s ease;
   overflow: hidden;
 }
 .header .container .header__panel.open {
-  max-height: 350px;
+  height: 340px;
 }
 .header .container .header__nav,
 .header .container .header__auth {
@@ -544,6 +543,7 @@ h3 {
     width: 66%;
     margin: 0;
     justify-content: space-between;
+    overflow: visible;
   }
   .header .container .header__nav,
   .header .container .header__auth {
