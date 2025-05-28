@@ -516,7 +516,8 @@ h3 {
     font-size: 48px;
   }
   .container {
-    padding: 80px 120px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   .section__content {
     margin-bottom: 72px;
@@ -529,8 +530,8 @@ h3 {
     padding-bottom: 30px;
   }
   .header .container .header__top {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .header .container .header__burger {
     display: none;
